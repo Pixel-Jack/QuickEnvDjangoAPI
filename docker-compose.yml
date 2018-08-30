@@ -4,13 +4,15 @@ services:
   django:
     build: .
     environment:
-      DJANGO_SETTINGS_MODULE: 'feedis_backend.settings.local'
+      DJANGO_SETTINGS_MODULE: 'my_project.settings.local'
     env_file:
       - env/django_variables.env
       # We need those to configure default db of django
       - env/db_postgres_variables.env
     volumes:
-    - ./feedis_backend:/home/django/webapp/feedis_backend
+      # Useful in order to not give in the container a lot of useless files that we already wanted to ignore in the dockerignore
+    - ./my_project:/home/django/webapp/my_project
+    - ./apps:/home/django/webapp/apps
     ports:
       - '8000:8000'
     command: /usr/bin/python manage.py runserver 0.0.0.0:8000
