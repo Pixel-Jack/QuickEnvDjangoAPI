@@ -2,9 +2,19 @@
 import os
 import sys
 
+map_environment = {
+    'prod': 'production',
+    'dev': 'local',
+    'staging': 'staging'
+}
+
 if __name__ == '__main__':
-    # If DJANGO_SETTINGS_MODULE not given, then we take productions settings, be careful
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_project.settings.production')
+    try:
+        environment = map_environment[os.environ.get('ENVIRONMENT')]
+    except KeyError:
+        raise ValueError('ENVIRONMENT variable "{}" unknown. Choose dev, prod or staging !'.format(environment))
+
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webeeld.settings.{}'.format(environment))
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

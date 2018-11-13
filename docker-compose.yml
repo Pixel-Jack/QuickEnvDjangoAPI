@@ -6,9 +6,7 @@ services:
     environment:
       DJANGO_SETTINGS_MODULE: 'my_project.settings.local'
     env_file:
-      - env/django_variables.env
-      # We need those to configure default db of django
-      - env/db_postgres_variables.env
+      - .env
     volumes:
       # Useful in order to not give in the container a lot of useless files that we already wanted to ignore in the dockerignore
     - ./my_project:/home/django/webapp/my_project
@@ -22,7 +20,7 @@ services:
     image: postgres:10.5-alpine
     restart: always
     env_file:
-      - env/db_postgres_variables.env
+      - .env
     ports:
       - '5432:5432'
     volumes:

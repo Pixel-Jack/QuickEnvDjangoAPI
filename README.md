@@ -3,32 +3,17 @@
 ## To adapt
 Resarch and rename every my_project by the name of your project. So as for first_app.
 
+
 ## Setup a development station
 1. install docker
 2. install docker-compose
-3. create a directory 'env' (it won't be pushed) to store critical information that MUST not appear in your repo.
-
-    a/ create a file django_variables.env
-    
-    b/ set:
-    ```text
-    SECRET_KEY=#SET A KEY#
-    ```
-    
-    c/ create a file db_postgres_variables.env
-    
-    d/ set:
-    ```text
-    POSTGRES_USER=my_project
-    POSTGRES_DB=my_project
-    POSTGRES_PASSWORD=#SET A PASSWORD#
-    ```
-        
-4. in the docker-compose file set the DJANGO_SETTINGS_MODULE as you want
-5. docker-compose up --build -d 
-6. docker-compose exec django /bin/bash
-7. python manage.py migrate
-8. python manage.py createsuperuser
+3. Copy the .env.example file as .env and change the value as you want
+4. docker-compose up --build -d 
+5. docker-compose exec django /bin/bash
+6. python manage.py migrate
+7. python manage.py createsuperuser
+8. Test by going on http://localhost:8000
+9. Then http://localhost:8000/admin and login with your superuser
         
         
 ## Structure (TO READ)
