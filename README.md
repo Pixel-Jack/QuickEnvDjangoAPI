@@ -11,9 +11,11 @@ Resarch and rename every my_project by the name of your project. So as for first
 4. docker-compose up --build -d 
 5. docker-compose exec django /bin/bash
 6. python manage.py migrate
+6 Bis. (Prod config) python manage.py collectstatic (Don't forget to serve the collected_static directory created as static)
 7. python manage.py createsuperuser
 8. Test by going on http://localhost:8000
 9. Then http://localhost:8000/admin and login with your superuser
+        
         
         
 ## Structure (TO READ)

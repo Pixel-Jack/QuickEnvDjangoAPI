@@ -2,7 +2,7 @@ from my_project.settings.base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # CSRF_COOKIE_SECURE = True
 # SESSION_COOKIE_SECURE = True
