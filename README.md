@@ -19,9 +19,9 @@ Resarch and rename every my_project by the name of your project. So as for first
     
     d/ set:
     ```text
-    DB_USER=feedis
-    DB_DATABASE=feedis
-    DB_PASSWORD=#SET A PASSWORD#
+    POSTGRES_USER=my_project
+    POSTGRES_DB=my_project
+    POSTGRES_PASSWORD=#SET A PASSWORD#
     ```
         
 4. in the docker-compose file set the DJANGO_SETTINGS_MODULE as you want
