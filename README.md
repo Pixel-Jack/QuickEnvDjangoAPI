@@ -9,12 +9,12 @@ Resarch and rename every my_project by the name of your project. So as for first
 2. install docker-compose
 3. Copy the .env.example file as .env and change the value as you want
 4. docker-compose up --build -d 
-5. docker-compose exec django /bin/bash
-6. python manage.py migrate
-6 Bis. (Prod config) python manage.py collectstatic (Don't forget to serve the collected_static directory created as static)
-7. python manage.py createsuperuser
-8. Test by going on http://localhost:8000
-9. Then http://localhost:8000/admin and login with your superuser
+This will launch the scripts in the django container beginning with wait_for_postgre.
+
+Be careful if you want to launch a prod dev without a proxy redirecting the static request to webeeld/collected_static/ you will have some visual issue in your browser.
+5. Test by going on http://localhost:8000
+6. (Optionnal) In django container: python manage.py createsuperuser
+    Then http://localhost:8000/admin and login with your superuser
         
         
         

@@ -11,7 +11,7 @@ services:
     - ./apps:/home/django/webapp/apps
     ports:
       - '8000:8000'
-    command: /usr/bin/python manage.py runserver 0.0.0.0:8000
+    command: ["./script/wait_for_postgres.sh"]
     depends_on:
       - db
   db:
