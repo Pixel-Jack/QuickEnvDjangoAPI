@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-25 14:47+0000\n"
+"PO-Revision-Date: 2019-01-25 \n"
+"Last-Translator: Clement Ponthieu <clement.ponthieu@supelec.fr>\n"
+"Language-Team: Clement Ponthieu <clement.ponthieu@supelec.fr>\n"
+"Language: fr-FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: contrib/drf/serializers.py:12
+msgid "Password confirmation"
+msgstr "Confirmation du mot de passe"
+
+#: contrib/drf/serializers.py:29
+msgid "The two password fields didn't match."
+msgstr "Les deux champs ne correspondent pas."
+
+#: models.py:41
+msgid "first name"
+msgstr "prénom"
+
+#: models.py:42
+msgid "last name"
+msgstr "nom"
+
+#: models.py:44
+msgid "username"
+msgstr "nom d'utilisateur"
+
+#: models.py:47
+msgid "Required. 255 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr ""
+"Requis. 255 caractères ou moins. Lettres, nombres et @/./+/-/_ seulement."
+
+#: models.py:50 models.py:68
+msgid "A user with that username already exists."
+msgstr "Un utilisateur avec ce nom existe déjà."
+
+#: models.py:54
+msgid "email address"
+msgstr "adresse email"
+
+#: models.py:57
+msgid "A user with that email already exists."
+msgstr "Un utilisateur avec cette adresse email existe déjà."
+
+#: models.py:62
+msgid "phone number"
+msgstr "numéro de téléphone"
+
+#: models.py:66
+msgid ""
+"Enter a phone number. This number must be in the generic international "
+"format."
+msgstr ""
+"Entrez un numéro de téléphone. Ce numéro doit être dans le format "
+"international."
+
+#: models.py:72
+msgid "last login"
+msgstr "dernière connexion"
+
+#: models.py:73
+msgid "email confirmed"
+msgstr "email confirmé"
+
+#: models.py:74
+msgid "city"
+msgstr "ville"
+
+#: models.py:75
+msgid "Profile picture"
+msgstr "photo de profil"
+
+#: models.py:76
+msgid "Facebook"
+msgstr "Facebook"
+
+#: models.py:77
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: models.py:78
+msgid "Google"
+msgstr "Google"
+
+#: models.py:79
+msgid "Twitter"
+msgstr "Twitter"
+
+#: models.py:80
+msgid "website"
+msgstr "website"
+
+#: validators.py:11
+msgid ""
+"Enter a phone number. This number must in be the generic international "
+"format."
+msgstr ""
+"Entrez un numéro de téléphone. Ce numéro doit être dans le format "
+"international."
+
+#: validators.py:18
+msgid "You can't use an email address for this field."
+msgstr "Vous ne pouvez pas utiliser une adresse email pour ce champs."

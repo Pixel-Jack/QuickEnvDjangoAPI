@@ -14,7 +14,7 @@ if __name__ == '__main__':
     except KeyError:
         raise ValueError('ENVIRONMENT variable "{}" unknown. Choose dev, prod or staging !'.format(environment))
 
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webeeld.settings.{}'.format(environment))
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'YOUR_PROJECT.settings.{}'.format(environment))
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

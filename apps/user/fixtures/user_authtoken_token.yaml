@@ -1,0 +1,13 @@
+- model: authtoken.token
+  pk: 1
+  fields:
+    key: b349258c27487468ce0d7e028b5a65bfddc9fb94
+    created: 2018-12-13 18:12:53.165847 +00:00
+    user: 2
+- model: authtoken.token
+  pk: 2
+  fields:
+    key: b349258c27487468ce0d7e028b5a65bfddc9fb66
+    created: 2018-12-13 18:12:53.165847 +00:00
+    user: 3
+

@@ -1,14 +1,13 @@
-# start.sh
-
-#!/bin/bash
+#!/bin/sh
 
 function manage_app () {
-    python manage.py makemigrations
-    python manage.py migrate
+    python manage.py makemigrations --noinput
+    python manage.py migrate --noinput
+    django-admin compilemessages
 }
 
 function collectstatic () {
-    python manage.py collectstatic
+    python manage.py collectstatic --noinput
 }
 
 function start_development() {
@@ -21,7 +20,7 @@ function start_production() {
     # use gunicorn for production server here
     manage_app
     collectstatic
-    gunicorn my_project.wsgi:application -w 2 -b :8000
+    gunicorn YOUR_PROJECT.wsgi:application -w 2 -b :8000
 }
 
 if [ ${ENVIRONMENT} == "dev" ]; then

@@ -116,10 +116,6 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Translations
-*.mo
-*.pot
-
 # Django stuff:
 *.log
 local_settings.py
@@ -198,3 +194,10 @@ $RECYCLE.BIN/
 
 .gitignore
 .git
+
+# useless
+docs
+
+# Already mounted in a volume
+apps
+YOUR_PROJECT

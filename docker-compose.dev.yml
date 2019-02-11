@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  django:
+    ports:
+    - '8000:8000'
+  db:
+    ports:
+    - '5432:5432'
+  redis:
+    ports:
+    - "6379:6379"
+  maildev:
+    image: djfarrelly/maildev
+    container_name: ${ENVIRONMENT}_maildev
+    restart: always
+    ports:
+      - '1080:80'
+      - '25:25'

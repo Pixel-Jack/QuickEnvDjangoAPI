@@ -252,4 +252,5 @@ $RECYCLE.BIN/
 ### Django ###
 *.pyc
 
+
 collected_static/

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  django:
+    volumes:
+      - serve_nginx:/home/django/static
+
+networks:
+  default:
+    external:
+      name: ${SETUP_PROJECT_NAME}_default
+
+volumes:
+  serve_nginx:
+    external:
+      name: ${SETUP_PROJECT_NAME}_serve_nginx

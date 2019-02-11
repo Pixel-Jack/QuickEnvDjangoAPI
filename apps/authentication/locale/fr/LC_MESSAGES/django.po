@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR clement.ponthieu, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-25 14:50+0000\n"
+"PO-Revision-Date: 2019-01-25 HO:MI+ZONE\n"
+"Last-Translator: Clement Ponthieu <clement.ponthieu@supelec.fr>\n"
+"Language-Team: Clement Ponthieu <clement.ponthieu@supelec.fr>\n"
+"Language: fr-FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: contrib/drf/serializers.py:8
+msgid "Email"
+msgstr "Email"
+
+#: contrib/drf/serializers.py:12
+msgid "Login"
+msgstr "Login"
+
+#: contrib/drf/serializers.py:14
+msgid "Password"
+msgstr "Mot de passe"
+
+#: contrib/drf/serializers.py:27
+#, fuzzy
+msgid "Must include \"login\" and \"password\"."
+msgstr "Doit contenir (\"login\") et \"mot de passe\"."
+
+#: contrib/drf/serializers.py:34
+msgid "Unable to log in with provided credentials."
+msgstr "Impossible de se connecter avec ces identifiants."
+
+#: contrib/drf/serializers.py:42
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+#: contrib/drf/serializers.py:43
+msgid "New password confirmation"
+msgstr "Confirmation du nouveau mot de passe"
+
+#: contrib/drf/serializers.py:54
+msgid "The two password fields didn't match."
+msgstr "Les deux mots de passe sont différents"
+
+#: contrib/drf/serializers.py:64
+msgid "Old password"
+msgstr "Nouveau mot de passe"
+
+#: contrib/drf/serializers.py:77
+msgid "Your old password was entered incorrectly. Please enter it again."
+msgstr ""
+"Votre ancien mot de passe est incorrect. Veuillez le renseigner de nouveau."
+
+#: contrib/drf/views.py:250
+msgid "Invalid parameters"
+msgstr "Paramètres incorrects."
+
+#: templates/password_reset_email.html:2
+#, python-format
+msgid "Hi %(name)s!"
+msgstr "Salut %(name)s !"
+
+#: templates/password_reset_email.html:4
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at\n"
+"        %(site_name)s."
+msgstr ""
+"Tu reçois ce mail car tu as demandé à réinitialiser ton mot de passe pour "
+"ton compte utilisateur sur notre site \n"
+"        %(site_name)s."
+
+#: templates/password_reset_email.html:7
+msgid "Please go to the following page and choose a new password:"
+msgstr "Clique sur le lien suivant et choisis un nouveau mot de passe: "
+
+#: templates/password_reset_email.html:12
+msgid "Be careful this link is valid only 24h!"
+msgstr "Attention ce lien n'est valide que pour les 24h prochaines heures !"
+
+#: templates/password_reset_email.html:14
+#, python-format
+msgid "If you have any question, please contact us at %(contact_email)s."
+msgstr ""
+"Si tu as la moindre question, nous t'invitons à nous contacter à cette "
+"adresse %(contact_email)s."
+
+#: templates/password_reset_email.html:16
+msgid "Thanks for using our site,"
+msgstr "Merci de participer à notre aventure,"
+
+#: templates/password_reset_email.html:17
+#, python-format
+msgid "The %(site_name)s team!"
+msgstr "L'équipe de %(site_name)s !"
+
+#: templates/password_reset_email.html:21
+msgid "This is an automatic email, don't respond to this sender."
+msgstr "Ceci est un mail automatique, ne pas répondre à cet expéditeur."
+
+#: templates/password_reset_subject.txt:2
+#, python-format
+msgid "Password reset on %(site_name)s"
+msgstr "Réinitialisation du mot de passe sur %(site_name)s"

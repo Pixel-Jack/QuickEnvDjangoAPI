@@ -3,33 +3,34 @@ version: '3'
 services:
   django:
     build: .
+    restart: always
+    container_name: ${ENVIRONMENT}_django
     env_file:
       - .env
     volumes:
       # Useful in order to not give in the container a lot of useless files that we already wanted to ignore in the dockerignore
-    - ./my_project:/home/django/webapp/my_project
-    - ./apps:/home/django/webapp/apps
-    ports:
-      - '8000:8000'
+    - ./YOUR_PROJECT:/home/django/YOUR_PROJECT
+    - ./apps:/home/django/apps
     command: ["./script/wait_for_postgres.sh"]
     depends_on:
       - db
+      - redis
   db:
     image: postgres:10.5-alpine
     restart: always
+    container_name: ${ENVIRONMENT}_db
     env_file:
       - .env
-    ports:
-      - '5432:5432'
     volumes:
     - db:/var/lib/postgresql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER"]
-        interval: 3s
-        timeout: 1s
-        retries: 5
+      interval: 3s
+      timeout: 1s
+      retries: 5
   redis:
-    image: redis:5.0.1
+    image: redis:5.0.3-alpine
+    container_name: ${ENVIRONMENT}_redis
     volumes:
     - redis:/data
     healthcheck:
@@ -38,6 +39,7 @@ services:
       timeout: 1s
       retries: 5
 
-  volumes:
-    db:
-    redis:
+volumes:
+  db:
+  redis:
+

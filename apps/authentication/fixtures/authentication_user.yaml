@@ -1,0 +1,13 @@
+- model: user.user
+  pk: 2
+  fields:
+    password: "pbkdf2_sha256$120000$iLOJLMPxLoC8$Mj6KU2GjNnyH3juQJwrE1JxEkMx7rt5SyGqcL7r6C1E="
+    last_login: "2018-11-29 09:38:33.074033"
+    is_superuser: true
+    username: "admin"
+    first_name: "Ad"
+    last_name: "Min"
+    email: "ad.min@test-email.com"
+    is_staff: true
+    is_active: true
+    date_joined: "2018-11-27 22:15:33.482245"
